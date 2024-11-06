@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/style.css">
+    <script src="./src/scripts/index.js" defer type="module"></script>
+    <title>meu proximo niver</title>
+  </head>
+  <body>
+    <section id="niverSec">
+      <div class="formCard">
+        <form>
+          <h3>Proximo Niver</h3>
+          <p>
+            Descubra quantos dias faltam par o seu proximo aniversário e ja faça
+            uma lista de desejos para seus parentes e amigos!
+          </p>
+          <div class="dayBirth">
+            <label for="birthday">Nascimento:</label>
+            <input type="date" name="day" id="birthday" />
+          </div>
+        </form>
+        <p>Dias restantes: <span id="remainingDays"></span></p>
+        <button type="button" id="discover">Descobrir!</button>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.formCard {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 2rem;
+    background-color: #292929;
+    border-radius: 10px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+            h3{
+                font-size: 28px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 16px;                
+            }
+            .dayBirth{
+                display: flex;
+                gap: 2rem;
+                flex: 1;
+
+                    input{
+                        flex: 1;
+
+                    }
+            }
+    }
+
+    .remainingDays{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: blueviolet;
+        font-style: 22px;        
+        animation: aumentarDiminuirr infinite normal;
+    }
+
+    /* @keyframes aumentarDiminuirr {
+        0%{
+            transform
+        }
+    }
+     */
+
+    button {
+        padding: .5rem 2rem;
+        border-radius: 10px;
+        border: none;
+    }
+}
