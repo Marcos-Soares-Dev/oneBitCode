@@ -11,4 +11,10 @@ email.addEventListener("input", () => {
     }
 });
 
-
+password.addEventListener("input", () => {
+    if (password.validity.patternMismatch) {
+        password.setCustomValidity("Por favor, insira uma senha valida!");
+    } else {
+        password.setCustomValidity("");
+    }
+});
