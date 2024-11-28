@@ -1,26 +1,33 @@
-let informaçõesIMC = [{nome: "Joaquim", altura: 160, peso: 60},{ nome: "Maria", altura: 180, peso: 150},{ nome: "Pedro", altura: "160", peso: 60}]
-
-function caucularIMC(arr) {
+function calcIMC(weigth, heigth) {
     return new Promise((resolve, reject) => {
-        try {
-            arr.forEach(item => {
-                if(typeof item.altura !== "number" || typeof item.peso !== "number") {
-                    throw new Error("Os parâmetros informados devem ser do tipo number")
-                }
-                item.IMC = item.peso / (item.altura * item.altura)
-            })
-            resolve(arr)
-        } catch (error) {
-            reject(error)
+        if (typeof weigth !== 'number' || typeof heigth !== 'number') {
+            reject(`Os argumentos devem ser do tipo NUMBER` )
+        } else {
+            console.log("Calculando o IMC, por favor aguarde...");            
+            setTimeout(() => {
+                resolve(weigth / (heigth * heigth))
+            }, 2000);
         }
     })
 }
 
-caucularIMC(infosIMC)
-    .then((arr) => {
-        console.log(arr)
+function showIMC(weigth, heigth) {
+    calcIMC(weigth, heigth).then((result) => {
+        console.log(`O resultado do IMC foi: ${result}`);
+        if (result < 18.5) {
+            console.log("Situação: MAGREZA");                       
+        } else if (result < 25) {
+            console.log("Situação: NORMAL");            
+        } else if (result < 30) {
+            console.log("Situação: SOBREPESO");            
+        } else if (weigth < 40) {
+            console.log("Situação: OBESIDADE");            
+        }  else {
+            console.log("Vixe, Morreu");            
+        }
+    }).catch((erro) => {
+        console.log(erro);        
     })
-    .catch((error) => {
-        console.log(error)
-    })
-    
+}
+
+showIMC(76, "1.71")
