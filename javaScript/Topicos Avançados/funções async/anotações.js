@@ -7,11 +7,11 @@
 
 async function sum(a,b) {
     if (typeof a !== "number" || typeof b !== "number") {
-        return Promisse.reject("Os argumentos devem ser do tipo NUMBER")
+        return Promise.reject("Os argumentos devem ser do tipo NUMBER")
     } else {
         return a + b
     }
 }
 
-
+sum(5,null).then((res) => console.log(res)).catch((err) => console.log(err))
 sum(5,6).then((res) => console.log(res)).catch((err) => console.log(err))
