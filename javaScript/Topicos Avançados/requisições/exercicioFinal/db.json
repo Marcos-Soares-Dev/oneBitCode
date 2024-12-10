@@ -1,16 +1,19 @@
 {
-    "deposits": [
+    "transactions": [
         {
             "id": 1,
-            "value": 100
+            "name": "Alex Doe",
+            "amount": 1000
         },
         {
             "id": 2,
-            "value": 200            
+            "name": "Jane Doe",
+            "amount": 2000
         },
         {
             "id": 3,
-            "value": 300
+            "name": "John Doe",
+            "amount": 3000
         }
     ]
 }
