@@ -1,0 +1,19 @@
+{
+    "transactions": [
+        {
+            "id": 1,
+            "name": "Alex Doe",
+            "amount": 1000
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe",
+            "amount": 2000
+        },
+        {
+            "id": 3,
+            "name": "John Doe",
+            "amount": 3000
+        }
+    ]
+}

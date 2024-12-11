@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 8vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+}
+
+#container{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    
+
+    & .deposit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        gap: 1rem;        
+        border-radius: 5px;
+        border: 1px solid #242424;
+
+
+        & #depositForm{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;        
+            padding: 2rem;
+            border-radius: 5px;
+            
+            & input{
+                width: 100%;
+                padding: .5rem 1rem;
+                border-radius: 5px;
+                border: none;
+                background-color: #242424;
+                color: #fff;
+            }
+    
+            & button {
+                width: 100%;
+                padding: .5rem 1rem;
+                border-radius: 5px;
+                border: none;
+                background-color: #242424;
+                color: #fff;
+            }
+        }
+    }
+    
+    
+
+    & .historico {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: 5px;
+        border: 1px solid #242424;
+
+        & .balanceNow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+    }
+
+        & .balance {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-height: 80;
+            gap: 1rem;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 5px;
+            border: 1px solid #242424;
+
+    }  
+
+    & #historicTransactions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        & div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex: 1;
+
+        }
+
+    }
+}
+
+}
