@@ -1,0 +1,16 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "title": "Olá, Mundo!",
+            "content": "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "author": "Marcos"
+        },
+        {
+            "id": 2,
+            "title": "Requisição POST",
+            "content": "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "author": "Edi"
+        }
+    ]
+}
