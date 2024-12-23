@@ -14,4 +14,6 @@ então organizar para que tudo fique facil de ser localizado é uma boa pratica 
 podemos agrupar um em uma pasta um componente pricipal que tera seus arquivos jsx complementares. 
 tudo isso dentro de uma pasta especifica para os nossos componentes criados 
 
-*** ***
+*** TABALHANDO COM FORMULARIOS NO REACT***
+
+
