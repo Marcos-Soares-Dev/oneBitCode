@@ -1,0 +1,51 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 50%;
+    gap: 2rem;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.cardImage img{
+    width: 16vw;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+    height: auto;
+}
+
+.cardInfo h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cardInfo p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cardInfo button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cardInfo button:hover {
+    background-color: #0056b3;
+}
